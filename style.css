@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.price {
+  background: #222;
+  color: #fff;
+  padding: 0.2em 0.5em;
+  display: inline-block;
+  border-radius: 0.2em;
+  position: fixed;
+}
+
+#beef {
+  top: 16em;
+  left: 26em;
+}
+#orange {
+  top: 16em;
+  left: 42em;
+}
+#milk {
+  top: 16em;
+  left: 58em;
+}
+#pet_food {
+  top: 32em;
+  left: 26em;
+}
+#bread {
+  top: 32em;
+  left: 42em;
+}
+#peas {
+  top: 32em;
+  left: 58em;
+}
