@@ -31,6 +31,7 @@ class Scene {
       // for perspective
       this.controls.minDistance = 400;
       this.controls.maxDistance = 1200;
+      console.log(this.controls);
     }
 
     window.addEventListener('resize', () => {

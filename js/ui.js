@@ -9,18 +9,6 @@ tooltip.style.zIndex = '10';
 tooltip.style.pointerEvents = 'none';
 document.body.appendChild(tooltip);
 
-const dashboard = document.createElement('div');
-dashboard.classList.add('dashboard');
-dashboard.style.position = 'fixed';
-dashboard.style.padding = '0.3em 0.6em';
-dashboard.style.background = '#333';
-dashboard.style.color = '#fff';
-dashboard.style.zIndex = '10';
-dashboard.style.top = '1em';
-dashboard.style.right = '1em';
-dashboard.innerHTML = '🅿️ $86.00/ton';
-document.body.appendChild(dashboard);
-
 class UI {
   constructor(scene, selectables) {
     this.scene = scene;

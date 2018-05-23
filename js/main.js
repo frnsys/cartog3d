@@ -3,9 +3,20 @@ import Grid from './grid.js';
 import Cell from './cell.js';
 import Scene from './scene.js';
 
-const scene = new Scene();
+const map = [
+  'a a a a a a',
+  ' a a a a o o',
+  'o o o o o o',
+  ' o g g g g o',
+  'o o g g g o',
+  ' o o f f f f o',
+  'o o f f f o',
+  ' o o d d d d o'
+].map((row) => row.trim().split(' '));
 
-const grid = Grid.fromMap(state.map, 40);
+const scene = new Scene({});
+
+const grid = Grid.fromMap(map, 40);
 scene.add(grid.group);
 
 var geometry = new THREE.BoxGeometry(10, 10, 35);
@@ -36,4 +47,10 @@ scene.add( cube );
 
 const ui = new UI(scene, grid.cells.map((c) => c.mesh));
 
-scene.render();
+
+function render(time) {
+  scene.render();
+  requestAnimationFrame(render);
+}
+render();
+
